@@ -16,8 +16,10 @@ function Cell({ value, index }: Props) {
 		dispatch(checkWinner());
 	}
 
+	let className = `${classes.cell}`;
+	value === "x" ? (className += ` ${classes.x}`) : (className += ` ${classes.o}`);
 	return (
-		<div className={classes.cell} onClick={clickHandler}>
+		<div className={className} onClick={clickHandler}>
 			{value}
 		</div>
 	);

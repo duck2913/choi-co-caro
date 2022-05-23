@@ -5,10 +5,19 @@ import { RootState } from "./store/store";
 
 function App() {
 	const winner = useSelector((state: RootState) => state.gameSlice.winner);
+
+	function replayHandler() {
+		window.location.reload();
+	}
 	return (
 		<div className="App">
 			<Board />
-			{winner && <p>The winner is {winner}</p>}
+			{winner && (
+				<div className="notification">
+					The winner is {winner}
+					<button onClick={replayHandler}>Play again</button>
+				</div>
+			)}
 		</div>
 	);
 }
