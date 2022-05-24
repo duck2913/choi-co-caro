@@ -1,5 +1,6 @@
 # Getting Started with Create React App
 https://app.netlify.com/sites/choi-co-caro-di/settings/general
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
